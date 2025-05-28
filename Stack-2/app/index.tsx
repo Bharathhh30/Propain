@@ -15,7 +15,7 @@ export default function Index() {
       <Text>Edit app/index.tsx to edit this screen.</Text>
       <Pressable onPress={()=>router.push("/(ani)/main")}>
         <Text>Hit me yaa i say</Text>
-          
+          <Text>check with versions</Text>
       </Pressable>
       
     </View>
