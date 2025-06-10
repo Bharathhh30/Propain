@@ -7,7 +7,7 @@ const Animate1 = () => {
     const width = useSharedValue(100);
 
     const handlePress = () =>{
-        width.value = withSpring(width.value+25);  // Increment width by 50px
+        width.value = withSpring(width.value+45);  // Increment width by 50px
     }
 
   return (
@@ -19,7 +19,7 @@ const Animate1 = () => {
         style={{
             width,
             height: 100,
-            backgroundColor: 'red',
+            backgroundColor: 'tomato',
         }}
        />
        <Button text='expand' onPress={handlePress} />

@@ -9,7 +9,7 @@ const animate1 = () => {
       <View className='ring-2 ring-slate-200 rounded-lg p-4'>
         <Text>This is a React Native Fast Refresh behavior. On every save, Fast Refresh reloads and re-renders components. If the navigation state isn't persisted, the app resets to the initial route (usually the home/index screen).</Text>
         {/* <Button /> */}
-        <View className='ring-2 ring-slate-200 rounded-lg mt-2 justify-center items-center'>
+        <View className='ring-2 ring-slate-200 rounded-lg mt-2 p-2 justify-center items-center'>
             <Button />
         </View>
       </View>
