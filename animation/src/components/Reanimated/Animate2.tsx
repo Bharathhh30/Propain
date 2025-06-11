@@ -3,6 +3,7 @@ import { Text, View } from 'react-native';
 import Animated, { useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated';
 import Button from '../Button';
 
+
 const Animate2 = () => {
     const opacity = useSharedValue<number>(1);
     const scale = useSharedValue<number>(1);
@@ -112,6 +113,18 @@ const Animate2 = () => {
             <Button text={"toggle"} onPress={handleToggle} />
         </View>
       </View>
+
+      {/* useAnimated props using custom svg and SvgUri */}
+      <View className='ring-2 mt-2 gap-y-2 items-center'>
+        <Text className='text-fuchsia-800 font-extralight'>useAnimatedProps</Text>
+        <View>
+            
+            {/* <SvgUri
+                uri = "../../assets/svgs/like.svg"
+                width={100}
+            /> */}
+        </View>
+      </View>
       
     </View>
   )
@@ -126,3 +139,4 @@ export default Animate2
 
 
 */
+
