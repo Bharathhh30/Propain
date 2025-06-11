@@ -77,7 +77,7 @@ const Animate2 = () => {
   return (
     <View className='items-center space-y-2'>
       <Text className='text-amber-300'>Animate2 (Component name)</Text>
-      <Text className='text-sm'>Single Line description</Text>
+      <Text className='text-sm'>useAnimatedStyle Hook</Text>
       {/* purple sqyare */}
       <View className='items-center'>
       {/* <Animated.View className={"w-20 h-20 mt-10 bg-purple-400 rounded-lg my-2"} style={{transform:[{translateX}]}}  /> */}
@@ -89,6 +89,18 @@ const Animate2 = () => {
       </View>
 
       {/* orange sqyare */}
+      <View className='ring-2 mt-2 gap-y-2 items-center'>
+        <Animated.View  className={"w-20 h-20 bg-orange-400 rounded-lg my-2"} style={[animatedStylePosition]}/>
+        <View className='flex-row gap-1'>
+            <Button text={"left"} onPress={handlePressLeft} />
+            <Button text={"right"} onPress={handlePressRight} />
+        </View>
+        {/* toggole and opacity related */}
+        <View>
+            <Button text={"toggle"} onPress={handleToggle} />
+        </View>
+      </View>
+      {/* blue and also checking scrollview */}
       <View className='ring-2 mt-2 gap-y-2 items-center'>
         <Animated.View  className={"w-20 h-20 bg-orange-400 rounded-lg my-2"} style={[animatedStylePosition]}/>
         <View className='flex-row gap-1'>
