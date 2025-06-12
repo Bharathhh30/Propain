@@ -1,7 +1,11 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 import Animated, { useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated';
+import { Circle } from 'react-native-svg';
 import Button from '../Button';
+
+
+const AnimatedCircle = Animated.createAnimatedComponent(Circle);
 
 
 const Animate2 = () => {
@@ -123,6 +127,8 @@ const Animate2 = () => {
                 uri = "../../assets/svgs/like.svg"
                 width={100}
             /> */}
+            <Text>Circle SVg</Text>
+            
         </View>
       </View>
       
