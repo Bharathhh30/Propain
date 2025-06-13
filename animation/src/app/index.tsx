@@ -33,6 +33,13 @@ export default function Index() {
           <Text>Animate 4</Text>
         </Pressable>
       </View>
+      {/* /animate 5 button */}
+      <View className="w-auto bg-red-300 p-4 rounded-full mt-4 ">
+        <Pressable className="text-white" onPress={() => router.push("/(anim)/animate5")}>
+          <Text>Animate 5</Text>
+        </Pressable>
+      </View>
+      
     </View>
   );
 }
